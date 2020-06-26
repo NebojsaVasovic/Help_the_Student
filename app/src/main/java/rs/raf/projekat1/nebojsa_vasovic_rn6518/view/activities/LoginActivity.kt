@@ -11,7 +11,7 @@ import rs.raf.projekat1.nebojsa_vasovic_rn6518.R
 class LoginActivity : AppCompatActivity(R.layout.activity_login) {
 
     companion object{
-        const val pin = 1234
+        const val pin = 1233
         const val NAME_KEY = "name"
         const val LAST_NAME_KEY = "lastname"
         const val HOSPITAL_KEY = "hospital"
