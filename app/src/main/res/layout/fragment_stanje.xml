@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/stanje_tv_headline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/TextHeadStyle"
+        android:text="@string/stanje_head_text"/>
+
+    <TextView
+        android:id="@+id/stanje_cekaonica_tv"
+        style="@style/TextStyleStanje"
+        android:text="@string/stanje_cekaonica"
+        android:layout_marginStart="@dimen/margin_large"
+        app:layout_constraintBottom_toTopOf="@id/stanje_hospitalizovani_tv"
+        app:layout_constraintEnd_toStartOf="@id/stanje_cekaonica_tv_value"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/stanje_cekaonica_tv_value"
+        android:layout_marginEnd="@dimen/margin_large"
+        app:layout_constraintStart_toEndOf="@id/stanje_cekaonica_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/stanje_hospitalizovani_tv_value"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        android:textColor="@color/yellow_dark"
+        style="@style/TextStyleStanje"
+        android:text="@string/nula"/>
+
+    <TextView
+        android:id="@+id/stanje_hospitalizovani_tv"
+        style="@style/TextStyleStanje"
+        android:text="@string/stanje_hospitalizovani"
+        android:layout_marginStart="@dimen/margin_large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/stanje_hospitalizovani_tv_value"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/stanje_hospitalizovani_tv_value"
+        android:layout_marginEnd="@dimen/margin_large"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/stanje_hospitalizovani_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        android:textColor="@color/secondaryDarkColor"
+        style="@style/TextStyleStanje"
+        android:text="@string/nula"/>
+
+    <TextView
+        android:id="@+id/stanje_otpusteni_tv"
+        android:layout_marginStart="@dimen/margin_large"
+        app:layout_constraintTop_toBottomOf="@id/stanje_hospitalizovani_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/stanje_otpusteni_tv_value"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        style="@style/TextStyleStanje"
+        android:text="@string/stanje_otpusteni"/>
+
+    <TextView
+        android:id="@+id/stanje_otpusteni_tv_value"
+        android:layout_marginEnd="@dimen/margin_large"
+        app:layout_constraintTop_toBottomOf="@id/stanje_hospitalizovani_tv_value"
+        app:layout_constraintStart_toEndOf="@id/stanje_otpusteni_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        style="@style/TextStyleStanje"
+        android:textColor="@color/primaryDarkColor"
+        android:text="@string/nula"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

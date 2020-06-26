@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Projekat1</string>
+    <string name="navigation_stanje">Stanje</string>
+    <string name="navigation_unos">Unos</string>
+    <string name="navigation_liste">Liste</string>
+    <string name="navigation_profil">Profil</string>
+    <string name="login_head_text">Informacioni sistem za praćenje stanja pacijenata obolelih od Covid-19</string>
+    <string name="ime_unos">Unesite ime</string>
+    <string name="prezime_unos">Unesite prezime</string>
+    <string name="ime_ustanove_unos">Unesite ime bolnice u kojoj ste zaposleni</string>
+    <string name="pin_unos">Unsite pin</string>
+    <string name="prijava">Prijava</string>
+    <string name="karton_pacijenta_head_text">Karton pacijenta</string>
+    <string name="ime">Ime</string>
+    <string name="prezime">Prezime</string>
+    <string name="ime_value">Petar</string>
+    <string name="prezime_value">Petrovic</string>
+    <string name="bolnica">Bolnica</string>
+    <string name="bolnica_value">Urgentni centar KCS</string>
+    <string name="stanje">Temperatura i kasalj</string>
+    <string name="karton_pacijenta_stanje">Stanje pri prijemu</string>
+    <string name="karton_pacijenta_trenutno_stanje">Trenutno stanje</string>
+    <string name="karton_pacijenta_datum_prijema">Datum prijema</string>
+    <string name="zdravstveni_radnik_head_text">Podaci o zdravstvenom radniku</string>
+    <string name="ustanova">Ustanova</string>
+    <string name="datum">21.04.2020.</string>
+    <string name="odustani">Odustani</string>
+    <string name="izmeni">Izmeni</string>
+    <string name="odjava">Odjava</string>
+    <string name="cekaonica">Čekaonica</string>
+    <string name="hospitalizovani">Hospitalizovani</string>
+    <string name="otpusteni">Otpušteni</string>
+    <string name="stanje_head_text">Pregled brojnog stanja pacijenata</string>
+    <string name="stanje_cekaonica">Broj pacijenata u čekaonici</string>
+    <string name="stanje_hospitalizovani">Broj hospitalizovanih pacijenata</string>
+    <string name="stanje_otpusteni">Broj otpuštenih pacijenata</string>
+    <string name="unos_head_text">Unos novog pacijenta</string>
+    <string name="simptomi_unos">Unesite simptome i opšte stanje pacijenta</string>
+    <string name="cekaonica_dodaj">Dodaj u čekaonicu</string>
+    <string name="tri">3</string>
+    <string name="pet">5</string>
+    <string name="dva">2</string>
+    <string name="nula">0</string>
+    <string name="pretrazi">Pretraži po imenu ili prezimenu</string>
+    <string name="simptomi_value">Pacijent ima povisenu tempersturu i bolove u misicima</string>
+    <string name="zdrav">Zdrav</string>
+    <string name="hospitalizacija">Hospitalizacija</string>
+    <string name="karton">Karton</string>
+    <string name="otpust">Otpust</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

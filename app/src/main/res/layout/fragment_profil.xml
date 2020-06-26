@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/profil_tv_headline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/TextHeadStyle"
+        android:text="@string/zdravstveni_radnik_head_text"/>
+
+    <ImageView
+        android:id="@+id/profil_logo_img"
+        app:layout_constraintTop_toBottomOf="@id/profil_tv_headline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_convention"
+        android:contentDescription="@string/zdravstveni_radnik_head_text"
+        android:src="@drawable/patch"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/profil_tv_ime"
+        app:layout_constraintTop_toBottomOf="@id/profil_logo_img"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/margin_large"
+        style="@style/TextStyle"
+        android:text="@string/ime"/>
+
+    <TextView
+        android:id="@+id/profil_tv_ime_value"
+        app:layout_constraintTop_toBottomOf="@id/profil_tv_ime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        style="@style/TextStyle"
+        android:text="@string/ime_value"/>
+
+    <TextView
+        android:id="@+id/profil_tv_prezime"
+        app:layout_constraintTop_toBottomOf="@id/profil_tv_ime_value"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/margin_large"
+        style="@style/TextStyle"
+        android:text="@string/prezime"/>
+
+    <TextView
+        android:id="@+id/profil_tv_prezime_value"
+        app:layout_constraintTop_toBottomOf="@id/profil_tv_prezime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        style="@style/TextStyle"
+        android:text="@string/prezime_value"/>
+
+
+    <TextView
+        android:id="@+id/profil_tv_bolnica"
+        app:layout_constraintTop_toBottomOf="@id/profil_tv_prezime_value"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/margin_large"
+        style="@style/TextStyle"
+        android:text="@string/bolnica"/>
+
+    <TextView
+        android:id="@+id/profil_tv_bolnica_value"
+        app:layout_constraintTop_toBottomOf="@id/profil_tv_bolnica"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        style="@style/TextStyle"
+        android:text="@string/bolnica_value"/>
+
+
+    <Button
+        android:id="@+id/profil_btn_izmeni"
+        style="@style/ButtonStyle"
+        android:background="@color/btnColor"
+        android:text="@string/izmeni"
+        android:textColor="@color/primaryTextColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/profil_btn_odjava"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/profil_btn_odjava"
+        style="@style/ButtonStyle"
+        android:text="@string/odjava"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/profil_btn_izmeni" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

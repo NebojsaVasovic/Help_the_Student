@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activities.LoginActivity">
+
+    <ImageView
+        android:id="@+id/login_logo_img"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_convention"
+        android:contentDescription="@string/login_head_text"
+        android:src="@drawable/red_cross_against_corona"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/login_tv_headline"
+        app:layout_constraintTop_toBottomOf="@id/login_logo_img"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/TextHeadStyle"
+        android:text="@string/login_head_text"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/login_et_ime"
+        app:layout_constraintTop_toBottomOf="@+id/login_tv_headline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/margin_large"
+        style="@style/EditTextStyle"
+        android:hint="@string/ime_unos"
+        android:autofillHints="@string/ime_unos" />
+
+
+    <EditText
+        android:id="@+id/login_et_prezime"
+        app:layout_constraintTop_toBottomOf="@id/login_et_ime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/EditTextStyle"
+        android:hint="@string/prezime_unos"
+        android:autofillHints="@string/prezime_unos" />
+
+    <EditText
+        android:id="@+id/login_et_ime_bolnice"
+        app:layout_constraintTop_toBottomOf="@id/login_et_prezime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/EditTextStyle"
+        android:hint="@string/ime_ustanove_unos"
+        android:autofillHints="@string/ime_ustanove_unos" />
+
+    <EditText
+        android:id="@+id/login_et_pin"
+        app:layout_constraintTop_toBottomOf="@id/login_et_ime_bolnice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/EditTextStyle"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:layout_width="wrap_content"
+        android:hint="@string/pin_unos"
+        android:maxLength="4"
+        android:autofillHints="@string/pin_unos"
+        tools:ignore="TextFields" />
+
+    <Button
+        android:id="@+id/login_btn_prijava"
+        style="@style/ButtonStyle"
+        android:text="@string/prijava"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

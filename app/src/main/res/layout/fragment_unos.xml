@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/unos_tv_headline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/TextHeadStyle"
+        android:text="@string/unos_head_text"/>
+
+    <ImageView
+        android:id="@+id/zdravstveni_radnik_logo_img"
+        app:layout_constraintTop_toBottomOf="@id/unos_tv_headline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_convention"
+        android:contentDescription="@string/unos_head_text"
+        android:src="@drawable/unos_icon"
+        android:layout_marginBottom="@dimen/margin_large"
+        android:scaleType="centerCrop"/>
+
+    <EditText
+        android:id="@+id/unos_et_ime"
+        app:layout_constraintTop_toBottomOf="@id/zdravstveni_radnik_logo_img"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/EditTextStyle"
+        android:autofillHints="@string/ime_unos"
+        android:hint="@string/ime_unos" />
+
+    <EditText
+        android:id="@+id/unos_et_prezime"
+        app:layout_constraintTop_toBottomOf="@id/unos_et_ime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/EditTextStyle"
+        android:hint="@string/prezime_unos"
+        android:autofillHints="@string/prezime_unos" />
+
+    <EditText
+        android:id="@+id/unos_et_simptomi"
+        app:layout_constraintTop_toBottomOf="@id/unos_et_prezime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/EditTextStyle"
+        android:hint="@string/simptomi_unos"
+        android:autofillHints="@string/simptomi_unos" />
+
+
+    <Button
+        android:id="@+id/unos_btn_cekaonica"
+        style="@style/ButtonStyle"
+        android:background="@color/btnColor"
+        android:text="@string/cekaonica_dodaj"
+        android:textColor="@color/primaryTextColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="@dimen/padding"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

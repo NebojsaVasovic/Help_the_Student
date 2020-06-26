@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activities.ZdravstveniRadnikActivity">
+
+    <TextView
+        android:id="@+id/zdravstveni_radnik_tv_headline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/TextHeadStyle"
+        android:text="@string/zdravstveni_radnik_head_text"/>
+
+    <ImageView
+        android:id="@+id/zdravstveni_radnik_logo_img"
+        app:layout_constraintTop_toBottomOf="@id/zdravstveni_radnik_tv_headline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_convention"
+        android:contentDescription="@string/karton_pacijenta_head_text"
+        android:src="@drawable/patch"
+        android:layout_marginBottom="@dimen/margin_large"
+        android:scaleType="centerCrop"/>
+
+    <EditText
+        android:id="@+id/zdravstveni_radnik_et_ime"
+        app:layout_constraintTop_toBottomOf="@id/zdravstveni_radnik_logo_img"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/EditTextStyle"
+        android:autofillHints="@string/ime"
+        android:hint="@string/ime"
+        android:text="@string/ime"/>
+
+    <EditText
+        android:id="@+id/zdravstveni_radnik_et_prezime"
+        app:layout_constraintTop_toBottomOf="@id/zdravstveni_radnik_et_ime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/EditTextStyle"
+        android:hint="@string/prezime"
+        android:autofillHints="@string/prezime"
+        android:text="@string/prezime"/>
+
+    <EditText
+        android:id="@+id/zdravstveni_radnik_et_ustanova"
+        app:layout_constraintTop_toBottomOf="@id/zdravstveni_radnik_et_prezime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/EditTextStyle"
+        android:hint="@string/ustanova"
+        android:autofillHints="@string/ustanova"
+        android:text="@string/ustanova"/>
+
+
+    <Button
+        android:id="@+id/zdravstveni_radnik_btn_odustani"
+        style="@style/ButtonStyle"
+        android:background="@color/btnColor"
+        android:text="@string/odustani"
+        android:textColor="@color/primaryTextColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/zdravstveni_radnik_btn_izmeni"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/zdravstveni_radnik_btn_izmeni"
+        style="@style/ButtonStyle"
+        android:text="@string/izmeni"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/zdravstveni_radnik_btn_odustani" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
